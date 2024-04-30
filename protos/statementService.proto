@@ -1,0 +1,38 @@
+syntax = "proto3";
+package protobufPackages.services;
+
+option csharp_namespace = "ProtoBufPackages.Services";
+option java_package = "protobufPackages.services";
+
+import "protobufPackages/customTypes.proto";
+
+service StatementService {
+    rpc List(GetStatementsRequest) returns (GetStatementsResponse);
+}
+
+message GetStatementsRequest {
+    uint64 accountId = 1;
+    customTypes.UnixTimestamp start = 2;
+    customTypes.UnixTimestamp end = 3;
+    customTypes.PageToken page = 4;
+}
+
+message GetStatementsResponse {
+    repeated StatementRecord records = 1;
+    customTypes.PageToken prevPage = 2;
+    customTypes.PageToken nextPage = 3;
+}
+
+message StatementRecord {
+    uint64 id = 1;
+    string description = 4;
+    StatementType type = 2;
+    customTypes.UnixTimestampMs date = 3;
+    customTypes.Money amount = 5;
+}
+
+enum StatementType {
+    UNKNOWN = 0;
+    CREDIT = 1;
+    DEBIT = 2;
+}

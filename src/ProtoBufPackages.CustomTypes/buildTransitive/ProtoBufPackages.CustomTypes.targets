@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <_ProtoBufPackagesCustomTypes_ProtosPath>$(MSBuildThisFileDirectory)../protos/</_ProtoBufPackagesCustomTypes_ProtosPath>
+    </PropertyGroup>
+    
+    <PropertyGroup Condition="'$(ProtoIncludeCustomTypes)' == 'true'">
+        <Protobuf_StandardImportsPath>$(Protobuf_StandardImportsPath);$(_ProtoBufPackagesCustomTypes_ProtosPath)</Protobuf_StandardImportsPath>
+    </PropertyGroup>
+</Project>

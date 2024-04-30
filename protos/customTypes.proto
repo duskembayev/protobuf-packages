@@ -1,0 +1,21 @@
+syntax = "proto3";
+package protobufPackages.customTypes;
+
+option csharp_namespace = "ProtoBufPackages.CustomTypes";
+option java_package = "protobufPackages.customTypes";
+
+message Money {
+  int64 value = 1;
+}
+
+message UnixTimestamp {
+  int64 value = 1;
+}
+
+message UnixTimestampMs {
+  int64 value = 1;
+}
+
+message PageToken {
+  bytes value = 1;
+}

@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoBufPackages.CustomTypes", "src\ProtoBufPackages.CustomTypes\ProtoBufPackages.CustomTypes.csproj", "{71A23C2E-46F7-4D6F-84F0-DA9E79C37ED4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E2A8B4C2-0574-4526-AD60-B08C23C04E56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{D2C65A1C-A253-4808-A439-33F439CD3599}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomTypes.Example", "examples\CustomTypes.Example\CustomTypes.Example.csproj", "{A1E5DF2C-C354-420A-95E4-3E83FDC77DF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoBufPackages.Service", "src\ProtoBufPackages.Service\ProtoBufPackages.Service.csproj", "{C78EE1CB-B205-4BD8-BC52-91849618F4D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Example", "examples\Service.Example\Service.Example.csproj", "{9A1B9A30-AA8D-4BCC-A7DE-413CBD2DBCC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71A23C2E-46F7-4D6F-84F0-DA9E79C37ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A23C2E-46F7-4D6F-84F0-DA9E79C37ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A23C2E-46F7-4D6F-84F0-DA9E79C37ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A23C2E-46F7-4D6F-84F0-DA9E79C37ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1E5DF2C-C354-420A-95E4-3E83FDC77DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E5DF2C-C354-420A-95E4-3E83FDC77DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E5DF2C-C354-420A-95E4-3E83FDC77DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E5DF2C-C354-420A-95E4-3E83FDC77DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C78EE1CB-B205-4BD8-BC52-91849618F4D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C78EE1CB-B205-4BD8-BC52-91849618F4D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C78EE1CB-B205-4BD8-BC52-91849618F4D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C78EE1CB-B205-4BD8-BC52-91849618F4D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A1B9A30-AA8D-4BCC-A7DE-413CBD2DBCC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A1B9A30-AA8D-4BCC-A7DE-413CBD2DBCC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A1B9A30-AA8D-4BCC-A7DE-413CBD2DBCC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A1B9A30-AA8D-4BCC-A7DE-413CBD2DBCC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{71A23C2E-46F7-4D6F-84F0-DA9E79C37ED4} = {E2A8B4C2-0574-4526-AD60-B08C23C04E56}
+		{A1E5DF2C-C354-420A-95E4-3E83FDC77DF7} = {D2C65A1C-A253-4808-A439-33F439CD3599}
+		{C78EE1CB-B205-4BD8-BC52-91849618F4D7} = {E2A8B4C2-0574-4526-AD60-B08C23C04E56}
+		{9A1B9A30-AA8D-4BCC-A7DE-413CBD2DBCC6} = {D2C65A1C-A253-4808-A439-33F439CD3599}
+	EndGlobalSection
+EndGlobal

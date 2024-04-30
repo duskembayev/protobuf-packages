@@ -1,0 +1,7 @@
+<Project>
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <ProtoBufPackageVersion>1.0.0</ProtoBufPackageVersion>
+    </PropertyGroup>
+</Project>

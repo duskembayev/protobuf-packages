@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Version>$(ProtoBufPackageVersion)</Version>
+        <Description>Sample library with custom protobuf types</Description>
+        <RepositoryUrl>https://github.com/duskembayev/protobuf-packages</RepositoryUrl>
+        <IncludeSymbols>false</IncludeSymbols>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Google.Protobuf" Version="3.26.1"/>
+        <PackageReference Include="Grpc.Tools" Version="2.62.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Protobuf Include="..\..\protos\customTypes.proto" GrpcServices="None"/>
+    </ItemGroup>
+
+    <ItemGroup Label="Pack">
+        <None Include="..\..\protos\customTypes.proto" LinkBase="protos" Pack="true" PackagePath="protos\protobufPackages"/>
+        <None Include="buildTransitive\**" Pack="true" PackagePath="buildTransitive"/>
+    </ItemGroup>
+
+</Project>

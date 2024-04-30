@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <_ProtoBufPackagesService_ProtosPath>$(MSBuildThisFileDirectory)../protos/</_ProtoBufPackagesService_ProtosPath>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <Protobuf Include="$(_ProtoBufPackagesService_ProtosPath)protobufPackages/statementService.proto" GrpcServices="$(StatementGrpcServices)" />
+    </ItemGroup>
+</Project>

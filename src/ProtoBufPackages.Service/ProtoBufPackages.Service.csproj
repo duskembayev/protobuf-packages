@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Version>$(ProtoBufPackageVersion)</Version>
+        <Description>Sample library with protobuf service</Description>
+        <RepositoryUrl>https://github.com/duskembayev/protobuf-packages</RepositoryUrl>
+        <IncludeSymbols>false</IncludeSymbols>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ProtoBufPackages.CustomTypes" Version="$(ProtoBufPackageVersion)"/>
+    </ItemGroup>
+
+    <ItemGroup Label="Pack">
+        <None Include="..\..\protos\statementService.proto" LinkBase="protos" Pack="true" PackagePath="protos\protobufPackages"/>
+        <None Include="build\**" Pack="true" PackagePath="build"/>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Google.Protobuf" Version="3.26.1"/>
+        <PackageReference Include="Grpc.Tools" Version="2.62.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ProtoBufPackages.CustomTypes" Version="$(ProtoBufPackageVersion)"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Protobuf Include="example.proto" GrpcServices="None"/>
+    </ItemGroup>
+
+</Project>
